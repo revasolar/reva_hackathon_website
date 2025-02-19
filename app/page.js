@@ -43,7 +43,21 @@ const page = () => {
         </div>
     </div>
 </header>
-
+<section className="special-guests" id="guests">
+  <div className="container">
+    <h2 className="section-title">Special Guest</h2>
+    <div className="guests-grid">
+      <div className="guest-card matrix-bg">
+        <div className="guest-image">👨‍💼</div>
+        <div className="guest-info">
+          <h3>Anshuman Phadke</h3>
+          <p>ADAS Engineer, Mercedes Benz</p>
+          <div className="guest-topic">Keynote Speaker</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="tracks" id="tracks">
     <div class="container">
         <h2 class="section-title">Hackathon Tracks</h2>
