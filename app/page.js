@@ -47,7 +47,7 @@ const page = () => {
   <div className="container">
     <h2 className="section-title">Special Guest</h2>
     <div className="guests-grid">
-      <div className="guest-card matrix-bg">
+      <div className="guest-card ">
         <div className="guest-image">👨‍💼</div>
         <div className="guest-info">
           <h3>Anshuman Phadke</h3>
@@ -76,18 +76,20 @@ const page = () => {
             </div>
             <div class="track-card float-animation">
                 <div class="track-icon">+</div>
-                <h3 class="track-title">track3</h3>
-                <p class="track-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nesciunt natus aliquam odit voluptatum suscipit.</p>
+                <h3 class="track-title">Low Voltage Sensor Integration</h3>
+                <p class="track-description">Build low-powered circuits that can collect different data
+                from a vehicle (eg: tyre pressure, battery temperature, shock absorber compression, internal
+                vibrations, energy recovered from regenerative braking etc).</p>
             </div>
             <div class="track-card float-animation">
                 <div class="track-icon">🌐</div>
-                <h3 class="track-title">track4</h3>
-                <p class="track-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nam laboriosam est enim repellat quasi.</p>
+                <h3 class="track-title">Security of Autonomous Systems</h3>
+                <p class="track-description">The target is to safeguard the autonomous system networks using different network protocols or some hardware solutions  </p>
             </div>
             <div class="track-card float-animation">
                 <div class="track-icon">💡</div>
-                <h3 class="track-title">track5</h3>
-                <p class="track-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores est neque velit temporibus, earum eaque.</p>
+                <h3 class="track-title">Open Innovation</h3>
+                <p class="track-description">The team can create any project based on their understanding of Autonomous Systems</p>
             </div>
         </div>
     </div>

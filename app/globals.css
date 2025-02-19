@@ -128,7 +128,8 @@ nav {
   justify-content: center;
   width: 100%;
   position: relative;
-  padding: 60px 0;
+  padding: 100px 0;
+  margin-bottom: 120px;
 }
 .hero::before {
   content: '';
@@ -1216,12 +1217,35 @@ footer {
   100% { transform: translateY(100%); }
 }
 .special-guests {
-  padding: 120px 0;
+  padding: 120px 0 ; /* Increased bottom padding */
   position: relative;
   overflow: hidden;
+  margin-bottom: 120px 0; /* Added margin bottom */
+}
+
+.tracks {
+  padding: 120px 0; /* Top padding */
+  position: relative;
+  background: linear-gradient(170deg, var(--bg-dark) 0%, var(--bg-card) 100%);
+  margin-top: 120px;
+}
+
+.special-guests::before,
+.tracks::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg,
+    transparent,
+    rgba(0, 255, 255, 0.2),
+    transparent
+  );
 }
 
 .special-guests::before {
+  top: 0;
   content: '';
   position: absolute;
   inset: 0;
@@ -1229,6 +1253,9 @@ footer {
     rgba(0, 255, 255, 0.1) 0%,
     transparent 70%);
   pointer-events: none;
+}
+.tracks::before {
+  top: 0;
 }
 
 .guests-grid {
