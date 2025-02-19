@@ -1,8 +1,36 @@
-import React from 'react'
+"use client";
+import React, { useState, useEffect } from 'react';
 
-const page = () => {
+const Page = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  }, []);
+
+  if (loading) {
+    return (
+        <>
+        {loading&&(
+      <div className="loader">
+        <div className="loader-content">
+          <h1 className="loader-logo">REVATHON</h1>
+          <div className="loader-bar">
+            <div className="loader-progress"></div>
+          </div>
+        </div>
+      </div>
+      )}
+      </>
+    );
+  }
+
   return (
-    <> <header>
+    <>
+    <div className='page-content'>
+    <header>
     <div class="container">
         <nav>
             <div class="logo">REVATHON</div>
@@ -218,8 +246,9 @@ const page = () => {
             © 2025 REVA. All rights reserved.
         </div>
     </div>
-</footer></>
-  )
-}
+</footer>
+</div></>
+  );
+};
 
-export default page
+export default Page;
