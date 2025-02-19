@@ -1,101 +1,208 @@
-import Image from "next/image";
+import React from 'react'
 
-export default function Home() {
+const page = () => {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <> <header>
+    <div class="container">
+        <nav>
+            <div class="logo">REVATHON</div>
+            <div class="menu">
+                <a href="#about">About</a>
+                <a href="#tracks">Tracks</a>
+                <a href="#timeline">Timeline</a>
+                <a href="#winners">Winners</a>
+                <a href="#sponsors">Sponsors</a>
+            </div>
+        </nav>
+        
+        <div class="hero">
+            <div class="hero-content">
+                <h1>REVATHON</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore itaque aliquid neque! Recusandae numquam repudiandae, qui non sit, eos nihil ut laborum repellendus nam earum quis ratione, modi iste libero?</p>
+                <button class="cta-button">REGISTER NOW</button>
+                
+                <div class="countdown">
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="days">28</div>
+                        <div class="countdown-label">Days</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="hours">14</div>
+                        <div class="countdown-label">Hours</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="minutes">36</div>
+                        <div class="countdown-label">Minutes</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="seconds">42</div>
+                        <div class="countdown-label">Seconds</div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
-  );
+</header>
+
+<section class="tracks" id="tracks">
+    <div class="container">
+        <h2 class="section-title">Hackathon Tracks</h2>
+        
+        <div class="tracks-grid">
+            <div class="track-card float-animation">
+                <div class="track-icon">🔒</div>
+                <h3 class="track-title">Track1</h3>
+                <p class="track-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, aperiam non! Exercitationem quaerat aliquid nihil?</p>
+            </div>
+            <div class="track-card float-animation">
+                <div class="track-icon">⛓️</div>
+                <h3 class="track-title">track2</h3>
+                <p class="track-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, facilis. Natus fugiat placeat velit sit.</p>
+            </div>
+            <div class="track-card float-animation">
+                <div class="track-icon">+</div>
+                <h3 class="track-title">track3</h3>
+                <p class="track-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nesciunt natus aliquam odit voluptatum suscipit.</p>
+            </div>
+            <div class="track-card float-animation">
+                <div class="track-icon">🌐</div>
+                <h3 class="track-title">track4</h3>
+                <p class="track-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium nam laboriosam est enim repellat quasi.</p>
+            </div>
+            <div class="track-card float-animation">
+                <div class="track-icon">💡</div>
+                <h3 class="track-title">track5</h3>
+                <p class="track-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores est neque velit temporibus, earum eaque.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="timeline-section" id="timeline">
+    <div class="container">
+        <h2 class="section-title">Event Timeline</h2>
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <div class="timeline-date">February, 2025</div>
+                    <h3 class="timeline-title">Regigrations Open</h3>
+                    <p class="timeline-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <div class="timeline-date">March 5, 2025</div>
+                    <h3 class="timeline-title">Opening Ceremony</h3>
+                    <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <div class="timeline-date">March 6, 2025</div>
+                    <h3 class="timeline-title">Project Submission</h3>
+                    <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <div class="timeline-date">March 6, 2025</div>
+                    <h3 class="timeline-title">Winners Announcement</h3>
+                    <p class="timeline-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="winners-section" id="winners">
+    <div class="container">
+        <h2 class="section-title">Winners</h2>
+        <div class="podium-container">
+            <div class="podium first-place">
+                <div class="winner-avatar">👑</div>
+                <div class="winner-info">
+                    <div class="winner-place">1st Place</div>
+                    <div class="winner-name">TBD</div>
+                    <div class="project-name">TBD</div>
+                </div>
+                <div class="podium-stand">1</div>
+            </div>
+            <div class="podium second-place">
+                <div class="winner-avatar">🥈</div>
+                <div class="winner-info">
+                    <div class="winner-place">2nd Place</div>
+                    <div class="winner-name">TBD</div>
+                    <div class="project-name">TBD</div>
+                </div>
+                <div class="podium-stand">2</div>
+            </div>
+            <div class="podium third-place">
+                <div class="winner-avatar">🥉</div>
+                <div class="winner-info">
+                    <div class="winner-place">3rd Place</div>
+                    <div class="winner-name">TBD</div>
+                    <div class="project-name">TBD</div>
+                </div>
+                <div class="podium-stand">3</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="sponsors-section" id="sponsors">
+    <div class="container">
+        <h2 class="section-title">Our Sponsors</h2>
+        <div class="sponsors-grid">
+            <div class="sponsor-card">
+                <img src="sponsor1.png" alt="Sponsor 1" class="sponsor-logo" />
+            </div>
+            <div class="sponsor-card">
+                <img src="sponsor2.png" alt="Sponsor 2" class="sponsor-logo" />
+            </div>
+            <div class="sponsor-card">
+                <img src="sponsor3.png" alt="Sponsor 3" class="sponsor-logo" />
+            </div>
+            <div class="sponsor-card">
+                <img src="sponsor4.png" alt="Sponsor 4" class="sponsor-logo" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3 class="footer-title">About</h3>
+                <ul class="footer-links">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#tracks">Tracks</a></li>
+                    <li><a href="#timeline">Timeline</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-title">Contact</h3>
+                <ul class="footer-links">
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#support">Support</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-title">Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-icon">📱</a>
+                    <a href="#" class="social-icon">💻</a>
+                    <a href="#" class="social-icon">📧</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2025 REVA. All rights reserved.
+        </div>
+    </div>
+</footer></>
+  )
 }
+
+export default page
