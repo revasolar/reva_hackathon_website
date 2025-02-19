@@ -51,12 +51,13 @@ const page = () => {
         <div class="tracks-grid">
             <div class="track-card float-animation">
                 <div class="track-icon">🔒</div>
-                <h3 class="track-title">Track1</h3>
-                <p class="track-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, aperiam non! Exercitationem quaerat aliquid nihil?</p>
+                <h3 class="track-title">Software</h3>
+                <p class="track-description">Simulate an autonomous vehicle in Carla that will successfully operate in a map
+                made by us.</p>
             </div>
             <div class="track-card float-animation">
                 <div class="track-icon">⛓️</div>
-                <h3 class="track-title">track2</h3>
+                <h3 class="track-title">Hardware &</h3>
                 <p class="track-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, facilis. Natus fugiat placeat velit sit.</p>
             </div>
             <div class="track-card float-animation">
