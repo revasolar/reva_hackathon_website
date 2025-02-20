@@ -48,8 +48,8 @@ body {
     50px 50px,
     200% 200%;
   animation: 
-    gridMove 15s linear infinite,
-    gradientMove 15s ease infinite;
+    gridMove 30s linear infinite,
+    gradientMove 30s ease infinite;
   color: white;
   overflow-x: hidden;
 }
@@ -424,7 +424,7 @@ nav {
   transition: opacity 0.3s;
 }
 .track-card:hover::after {
-  opacity: 1;
+  opacity: 0;
 }
 
 .track-icon {
@@ -486,7 +486,7 @@ timeline-section::before {
     background-position: 0 0;
   }
   100% {
-    background-position: 50px 50px;
+    background-position: 0px 50px;
   }
 }
 
@@ -1539,14 +1539,14 @@ footer {
 }
 .page-content {
   opacity: 0;
-  animation: fadeIn 0.2s ease-in forwards;
-  animation-delay: 0.3s;
+  animation: fadeIn 0.3s ease-in forwards;
+  animation-delay: 0.5s;
 }
 
 .loader {
   opacity: 1;
   animation: fadeOut 0.8s ease-out forwards;
-  animation-delay: 1.5s;
+  animation-delay: 1.2s;
 }
 
 @keyframes fadeIn {

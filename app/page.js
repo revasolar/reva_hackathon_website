@@ -33,7 +33,7 @@ const Page = () => {
     <header>
     <div class="container">
         <nav>
-            <div class="logo">REVATHON</div>
+            <div class="logo">DeepDrive</div>
             <div class="menu">
                 <a href="#about">About</a>
                 <a href="#tracks">Tracks</a>
@@ -45,7 +45,7 @@ const Page = () => {
         
         <div class="hero">
             <div class="hero-content">
-                <h1>REVATHON</h1>
+                <h1>DeepDrive Auto Challenge</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore itaque aliquid neque! Recusandae numquam repudiandae, qui non sit, eos nihil ut laborum repellendus nam earum quis ratione, modi iste libero?</p>
                 <button class="cta-button">REGISTER NOW</button>
                 
