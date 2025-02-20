@@ -125,25 +125,25 @@ const Page = () => {
               <div className="track-card">
                 <div className="track-icon">🔒</div>
                 <h3 className="track-title">Software Track</h3>
-                <p className="track-description">Simulate an autonomous vehicle in Carla that will successfully operate in a map made by us.</p>
+                <p className="track-description">Simulate an autonomous vehicle in Carla that will successfully operate in a map made by us,autonomous racing in a simulated environment.</p>
               </div>
               <div className="track-card">
                 <div className="track-icon">⚡</div>
                 <h3 className="track-title">Hardware Track</h3>
-                <p className="track-description">Design and prototype hardware solutions for autonomous vehicle systems.</p>
+                <p className="track-description">Designing circuits to monitor realtime vehicle parameters and exploring energy harvesting techniques, collecting data and presenting it in usable form. </p>
               </div>
               <div className="track-card">
                 <div className="track-icon">📊</div>
-                <h3 className="track-title">Low Voltage Sensor Integration</h3>
-                <p className="track-description">Build low-powered circuits for vehicle data collection and monitoring.</p>
+                <h3 className="track-title">IOT Based Innovation</h3>
+                <p className="track-description">Building small scale vehicles that can self park or navigate using sensor integration.</p>
               </div>
-              <div className="track-card">
+              {/*<div className="track-card">
                 <div className="track-icon">🛡️</div>
                 <h3 className="track-title">Security Track</h3>
                 <p className="track-description">Develop security solutions for autonomous vehicle networks.</p>
-              </div>
+              </div>*/}
               <div className="track-card">
-                <div className="track-icon">💡</div>
+                <div className="track-icon">🛡️</div>
                 <h3 className="track-title">Open Innovation</h3>
                 <p className="track-description">Create innovative solutions for autonomous systems challenges.</p>
               </div>
@@ -186,6 +186,54 @@ const Page = () => {
             </div>
           </div>
         </section>
+        <section className="prizes-section">
+  <div className="container">
+    <h2 className="section-title">Grand Prize Pool</h2>
+    <div className="total-prize-pool">
+      <div className="prize-pool-amount">₹10000+</div>
+      <div className="prize-pool-label">Total Prize Pool</div>
+    </div>
+    
+    <div className="prizes-grid">
+      <div className="prize-card">
+        <div className="prize-icon">🏆</div>
+        <div className="prize-amount">₹3000</div>
+        <div className="prize-label">Winners</div>
+        <div className="prize-extras">
+           Industry Mentorship
+        </div>
+      </div>
+
+      <div className="prize-card">
+        <div className="prize-icon">🏆</div>
+        <div className="prize-amount">₹1750</div>
+        <div className="prize-label">Runner Ups Software Track</div>
+        <div className="prize-extras">
+          + Development Resources
+        </div>
+      </div>
+
+      <div className="prize-card">
+        <div className="prize-icon">🏆</div>
+        <div className="prize-amount">₹1750</div>
+        <div className="prize-label">Runner Ups IOT track</div>
+        <div className="prize-extras">
+           Training Sessions
+        </div>
+      </div>
+
+      <div className="prize-card">
+        <div className="prize-icon">⭐</div>
+        <div className="prize-amount">₹1750</div>
+        <div className="prize-label">Best All Girls Team</div>
+        <div className="prize-extras">
+          + Special Recognition
+          + Partner Benefits
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
         <section className="winners-section" id="winners">
           <div className="container">
@@ -242,31 +290,33 @@ const Page = () => {
           </div>
         </section>*/}
 
+
+
         <footer>
           <div className="container">
             <div className="footer-content">
               <div className="footer-column">
-                <h3 className="footer-title">Quick Links</h3>
+                <h3 className="footer-title">Co-ordinators</h3>
                 <ul className="footer-links">
-                  <li><a href="#about">About Us</a></li>
-                  <li><a href="#tracks">Tracks</a></li>
-                  <li><a href="#timeline">Timeline</a></li>
+                  <li>Priyanuj Boruah</li>
+                  <li>Ananya Anand</li>
+                  {/*<li><a href="#timeline">Timeline</a></li>*/}
                 </ul>
               </div>
               <div className="footer-column">
-                <h3 className="footer-title">Contact</h3>
+                <h3 className="footer-title">Contact Details</h3>
                 <ul className="footer-links">
-                  <li><a href="#contact">Contact Us</a></li>
-                  <li><a href="#support">Support</a></li>
-                  <li><a href="#faq">FAQ</a></li>
+                  <li>+918471806109</li>
+                  <li>+919714989797</li>
+                  <li>reva.vitc@gmail.com</li>
                 </ul>
               </div>
               <div className="footer-column">
                 <h3 className="footer-title">Follow Us</h3>
                 <div className="social-links">
-                  <a href="#" className="social-icon">📱</a>
-                  <a href="reva.vitc@gmail.com" className="social-icon">💻</a>
-                  <a href="#" className="social-icon">📧</a>
+                  <a href="https://www.instagram.com/revasolarracing.vitc/" className="social-icon">💻</a>
+                  <a href="mailto:reva.vitc@gmail.com" className="social-icon">💻</a>
+                  <a href="https://www.linkedin.com/company/re-va/" className="social-icon">💻</a>
                 </div>
               </div>
             </div>

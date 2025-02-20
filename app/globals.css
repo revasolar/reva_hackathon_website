@@ -76,7 +76,7 @@ nav {
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: bold;
   background: linear-gradient(to right, var(--neon-cyan), var(--neon-purple));
   -webkit-background-clip: text;
@@ -98,6 +98,7 @@ nav {
   transition: all 0.3s ease;
   position: relative;
   z-index: 1;
+  font-size: 20px;
 }
 
 .menu a:hover {
@@ -1728,4 +1729,113 @@ nav {
 }
 .hero-content h1{
   font-size: 4.5rem;
+}
+.prizes-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+  color: white;
+}
+
+.total-prize-pool {
+  text-align: center;
+  margin-bottom: 60px;
+  animation: fadeInUp 1s ease-out;
+}
+
+.prize-pool-amount {
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--neon-cyan);
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  margin-bottom: 10px;
+}
+
+.prize-pool-label {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.prizes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+.prize-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: floatIn 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.prize-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+}
+
+.prize-card:nth-child(1) { animation-delay: 0.1s; }
+.prize-card:nth-child(2) { animation-delay: 0.3s; }
+.prize-card:nth-child(3) { animation-delay: 0.5s; }
+.prize-card:nth-child(4) { animation-delay: 0.7s; }
+
+.prize-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.prize-amount {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--neon-cyan);
+  margin-bottom: 10px;
+}
+
+.prize-label {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.prize-extras {
+  color: #888;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+@keyframes floatIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .prize-pool-amount {
+    font-size: 3rem;
+  }
+  
+  .prizes-grid {
+    grid-template-columns: 1fr;
+  }
 }
