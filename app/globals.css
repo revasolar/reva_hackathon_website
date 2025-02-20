@@ -48,8 +48,8 @@ body {
     50px 50px,
     200% 200%;
   animation: 
-    gridMove 40s linear infinite,
-    gradientMove 30s ease infinite;
+    gridMove 100s linear infinite,
+    gradientMove 100s ease infinite;
   color: white;
   overflow-x: hidden;
 }
@@ -1837,5 +1837,66 @@ nav {
   
   .prizes-grid {
     grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding: 1rem;
+    position: relative;
+  }
+
+  .brand-name {
+    margin-bottom: 1rem;
+    order: 0;
+  }
+
+  .menu {
+    display: none; /* Hidden by default on mobile */
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    order: 2;
+  }
+
+  .menu.active {
+    display: flex; /* Show when active */
+  }
+
+  .menu a {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .logo {
+    order: 1;
+    margin: 1rem 0;
+  }
+
+  /* Add hamburger menu button */
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 100;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  /* Hide menu toggle on desktop */
+  @media (min-width: 769px) {
+    .menu-toggle {
+      display: none;
+    }
+    
+    .menu {
+      display: flex !important;
+    }
   }
 }

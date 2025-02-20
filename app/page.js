@@ -14,7 +14,7 @@ const Page = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 1500);
 
     const timer = setInterval(() => {
       const targetDate = new Date('2025-03-05T08:00:00').getTime();
