@@ -48,7 +48,7 @@ body {
     50px 50px,
     200% 200%;
   animation: 
-    gridMove 30s linear infinite,
+    gridMove 40s linear infinite,
     gradientMove 30s ease infinite;
   color: white;
   overflow-x: hidden;
