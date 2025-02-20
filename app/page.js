@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 const Page = () => {
   const [loading, setLoading] = useState(true);
@@ -35,18 +36,14 @@ const Page = () => {
 
   if (loading) {
     return (
-      <>
-        {loading && (
-          <div className="loader">
-            <div className="loader-content">
-              <h1 className="loader-logo">DeepDrive</h1>
-              <div className="loader-bar">
-                <div className="loader-progress"></div>
-              </div>
-            </div>
+      <div className="loader">
+        <div className="loader-content">
+          <h1 className="loader-logo">DeepDrive</h1>
+          <div className="loader-bar">
+            <div className="loader-progress"></div>
           </div>
-        )}
-      </>
+        </div>
+      </div>
     );
   }
 
@@ -56,22 +53,32 @@ const Page = () => {
         <header>
           <div className="container">
             <nav>
-              <div className="logo">DeepDrive</div>
+            <div className="brand-name">DeepDrive</div>
               <div className="menu">
                 <a href="#about">About</a>
                 <a href="#tracks">Tracks</a>
                 <a href="#timeline">Timeline</a>
                 <a href="#winners">Winners</a>
-                <a href="#sponsors">Sponsors</a>
+              </div>
+              <div className="logo">
+                <Image 
+                  src="/reva_logo.png" 
+                  alt="REVA Logo" 
+                  width={100} 
+                  height={70} 
+                  priority
+                />
               </div>
             </nav>
           </div>
         </header>
 
         <section className="hero">
-          <div className="hero-content">
-            <h1>DeepDrive Auto Challenge</h1>
-            <p>Where Innovation Meets Automation - Join us for a groundbreaking hackathon focused on the future of autonomous vehicles and smart mobility solutions.</p>
+  <div className="hero-content">
+    <h3 className="reva-title">REVA SOLAR RACING</h3>
+    <h2>PRESENTS</h2>
+    <h1>DeepDrive Auto Challenge</h1>
+    <p>Where Innovation Meets Automation - Join us for a groundbreaking hackathon focused on the future of autonomous vehicles and smart mobility solutions.</p>
             <button className="cta-button">REGISTER NOW</button>
             
             <div className="countdown">
@@ -94,16 +101,16 @@ const Page = () => {
             </div>
           </div>
         </section>
-
+       
         <section className="special-guests" id="guests">
           <div className="container">
             <h2 className="section-title">Special Guest</h2>
             <div className="guests-grid">
               <div className="guest-card">
-                <div className="guest-image">👨‍💼</div>
+                <div className="guest-image"></div>
                 <div className="guest-info">
-                  <h3>Anshuman Phadke</h3>
-                  <p>ADAS Engineer, Mercedes Benz</p>
+                  <h3>Grand Suprise</h3>
+                  <p>Stay Tuned!</p>
                   <div className="guest-topic">Keynote Speaker</div>
                 </div>
               </div>
@@ -215,7 +222,7 @@ const Page = () => {
           </div>
         </section>
 
-        <section className="sponsors-section" id="sponsors">
+       {/*} <section className="sponsors-section" id="sponsors">
           <div className="container">
             <h2 className="section-title">Our Sponsors</h2>
             <div className="sponsors-grid">
@@ -233,7 +240,7 @@ const Page = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section>*/}
 
         <footer>
           <div className="container">
@@ -258,7 +265,7 @@ const Page = () => {
                 <h3 className="footer-title">Follow Us</h3>
                 <div className="social-links">
                   <a href="#" className="social-icon">📱</a>
-                  <a href="#" className="social-icon">💻</a>
+                  <a href="reva.vitc@gmail.com" className="social-icon">💻</a>
                   <a href="#" className="social-icon">📧</a>
                 </div>
               </div>
