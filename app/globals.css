@@ -1900,3 +1900,17 @@ nav {
     }
   }
 }
+.developer-link {
+  background: linear-gradient(to right, var(--neon-cyan), var(--neon-purple));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.developer-link:hover {
+  text-shadow: 0 0 8px var(--neon-cyan);
+  transform: scale(1.05);
+}

@@ -321,8 +321,16 @@ const Page = () => {
               </div>
             </div>
             <div className="copyright">
-              © 2025 REVA. All rights reserved.Developed By Pranjal Mitra
-            </div>
+  © 2025 REVA. All rights reserved. Developed By{" "}
+  <a 
+    href="https://www.linkedin.com/in/pranjalmitra/" 
+    className="developer-link" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    Pranjal Mitra
+  </a>
+</div>
           </div>
         </footer>
       </div>
