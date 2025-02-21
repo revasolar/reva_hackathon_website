@@ -189,7 +189,7 @@ nav {
 }
 
 .hero p {
-  font-size: 0.8rem;
+  font-size: 1.25rem;
   max-width: 800px;
   margin: 0 auto 40px;
   color: rgba(255, 255, 255, 0.8);
@@ -725,7 +725,7 @@ timeline-section::before {
 .podium-container {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: baseline;
   gap: 40px;
   margin: 60px auto;
   padding: 40px;
@@ -1981,5 +1981,60 @@ nav {
   }
   50% {
     filter: brightness(1.3);
+  }
+}
+.third-place {
+  transform: translateY(20px); 
+}
+@media (max-width: 768px) {
+  .podium-container {
+    align-items: center;
+  }
+  
+  .third-place {
+    transform: translateY(0); 
+  }
+}
+.cta-button {
+  text-decoration: none; /* Remove underline */
+}
+
+.prizes {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.prize-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.first-place {
+  transform: translateY(-30px); /* Move first place higher */
+  z-index: 2;
+}
+
+.second-place {
+  transform: translateY(30px);
+}
+
+.third-place {
+  transform: translateY(60px);
+}
+
+@media (max-width: 768px) {
+  .prizes {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .prize-card {
+    transform: none;
   }
 }

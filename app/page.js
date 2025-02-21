@@ -79,7 +79,14 @@ const Page = () => {
     <h2>PRESENTS</h2>
     <h1>DeepDrive Auto Challenge</h1>
     <p>The First<span className="highlight-text"> Autonomous</span> Vehicle Hackathon In VIT Chennai.</p>
-            <button className="cta-button">REGISTER NOW</button>
+    <a 
+  href="https://forms.gle/G5vdcSsySNs1nDbT8" 
+  target="_blank" 
+  rel="noopener noreferrer" 
+  className="cta-button"
+>
+  REGISTER NOW
+</a>
             
             <div className="countdown">
               <div className="countdown-item">
@@ -200,7 +207,7 @@ const Page = () => {
         <div className="prize-amount">₹3000</div>
         <div className="prize-label">Winners</div>
         <div className="prize-extras">
-           Industry Mentorship
+           +Industry Mentorship
         </div>
       </div>
 
@@ -218,7 +225,7 @@ const Page = () => {
         <div className="prize-amount">₹1750</div>
         <div className="prize-label">Runner Ups IOT track</div>
         <div className="prize-extras">
-           Training Sessions
+           +Special Recognition
         </div>
       </div>
 
@@ -228,7 +235,6 @@ const Page = () => {
         <div className="prize-label">Best All Girls Team</div>
         <div className="prize-extras">
           + Special Recognition
-          + Partner Benefits
         </div>
       </div>
     </div>
