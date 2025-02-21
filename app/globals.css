@@ -1914,3 +1914,75 @@ nav {
   text-shadow: 0 0 8px var(--neon-cyan);
   transform: scale(1.05);
 }
+@media (max-width: 768px) {
+  .countdown {
+    flex-wrap: nowrap; 
+    gap: 10px; 
+    padding: 15px 10px; 
+    width: 100%; 
+    justify-content: space-between; 
+  }
+
+  .countdown-item {
+    min-width: auto; 
+    flex: 1; 
+  }
+
+  .countdown-number {
+    font-size: 1.8rem; 
+  }
+
+  .countdown-label {
+    font-size: 0.8rem; 
+  }
+}
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.8rem;
+    white-space: nowrap;
+    width: auto;
+    overflow: visible;
+    /* Remove text-overflow: ellipsis */
+  }
+
+  .hero-content {
+    padding: 0 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-text {
+    text-align: center;
+    width: 100%;
+  }
+
+  .reva-title {
+    font-size: 1.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+}
+.highlight-text {
+ /* background: linear-gradient(120deg, rgba(0, 255, 255, 0.2), rgba(0, 255, 255, 0.1));*/
+  padding: 0 8px;
+  border-radius: 4px;
+  color: #00ffff;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  font-weight: bold;
+  position: relative;
+  animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0%, 100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.3);
+  }
+}

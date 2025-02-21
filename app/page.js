@@ -78,7 +78,7 @@ const Page = () => {
     <h3 className="reva-title">REVA SOLAR RACING</h3>
     <h2>PRESENTS</h2>
     <h1>DeepDrive Auto Challenge</h1>
-    <p>Where Innovation Meets Automation - Join us for a groundbreaking hackathon focused on the future of autonomous vehicles and smart mobility solutions.</p>
+    <p>The First  <span className="highlight-text"> Autonomous</span> Vehicle Hackathon In VIT Chennai.</p>
             <button className="cta-button">REGISTER NOW</button>
             
             <div className="countdown">
