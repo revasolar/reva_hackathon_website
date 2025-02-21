@@ -2038,3 +2038,30 @@ nav {
     transform: none;
   }
 }
+.hero p {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  max-width: 90%;
+  margin: 0 auto 40px;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 0 15px;
+}
+
+.cta-button {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  padding: clamp(10px, 3vw, 12px) clamp(30px, 5vw, 40px);
+  background: linear-gradient(90deg, var(--neon-cyan), var(--neon-purple));
+  color: white;
+  width: min(90%, 300px);
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .cta-button {
+    display: block;
+    margin: 0 auto;
+    min-width: 200px;
+  }
+}
