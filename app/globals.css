@@ -1888,8 +1888,6 @@ nav {
     font-size: 1.5rem;
     cursor: pointer;
   }
-
-  /* Hide menu toggle on desktop */
   @media (min-width: 769px) {
     .menu-toggle {
       display: none;
@@ -1942,7 +1940,6 @@ nav {
     white-space: nowrap;
     width: auto;
     overflow: visible;
-    /* Remove text-overflow: ellipsis */
   }
 
   .hero-content {
