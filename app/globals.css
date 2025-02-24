@@ -2485,3 +2485,30 @@ nav {
     font-size: 1.75rem;
   }
 }
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.8rem;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.social-icons a[href*="instagram"]:hover {
+  color: #e440d6;
+}
+
+.social-icons a[href*="mailto"]:hover {
+  color: #ea4335;
+}
+
+.social-icons a[href*="linkedin"]:hover {
+  color: #0077b5;
+}

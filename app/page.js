@@ -349,13 +349,19 @@ const Page = () => {
                 </ul>
               </div>
               <div className="footer-column">
-                <h3 className="footer-title">Follow Us</h3>
-                <div className="social-links">
-                  <a href="https://www.instagram.com/revasolarracing.vitc/" className="social-icon">💻</a>
-                  <a href="mailto:reva.vitc@gmail.com" className="social-icon">💻</a>
-                  <a href="https://www.linkedin.com/company/re-va/" className="social-icon">💻</a>
-                </div>
-              </div>
+  <h3 className="footer-title">Follow Us</h3>
+  <div className="social-icons">
+    <a href="https://www.instagram.com/revasolarracing.vitc/" target="_blank" rel="noopener noreferrer">
+      <i className="fab fa-instagram"></i>
+    </a>
+    <a href="mailto:reva.vitc@gmail.com">
+      <i className="fas fa-envelope"></i>
+    </a>
+    <a href="https://www.linkedin.com/company/re-va/" target="_blank" rel="noopener noreferrer">
+      <i className="fab fa-linkedin"></i>
+    </a>
+  </div>
+</div>
             </div>
             <div className="copyright">
   © 2025 REVA. All rights reserved. Developed By{" "}
