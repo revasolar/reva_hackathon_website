@@ -108,6 +108,37 @@ const Page = () => {
             </div>
           </div>
         </section>
+        <section className="registration-details">
+  <div className="container">
+    <h2 className="section-title">Registration Details</h2>
+    <div className="details-grid">
+      <div className="detail-card venue-card">
+        <div className="detail-icon">📍</div>
+        <h3>Venue</h3>
+        <p>Kasturba Hall</p>
+        <p>VIT Chennai</p>
+      </div>
+      <div className="detail-card date-card">
+        <div className="detail-icon">📅</div>
+        <h3>Date</h3>
+        <p>5th March, 2025</p>
+        <p>8:00 AM onwards</p>
+      </div>
+      <div className="detail-card fees-card">
+        <div className="detail-icon">💰</div>
+        <h3>Registration Fees</h3>
+        <div className="fees-item">
+          <span className="team-type">Duo</span>
+          <span className="fee-amount">₹250</span>
+        </div>
+        <div className="fees-item">
+          <span className="team-type">Trio/Squad</span>
+          <span className="fee-amount">₹400</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
        
         <section className="special-guests" id="guests">
           <div className="container">
@@ -197,7 +228,7 @@ const Page = () => {
   <div className="container">
     <h2 className="section-title">Grand Prize Pool</h2>
     <div className="total-prize-pool">
-      <div className="prize-pool-amount">₹10000+</div>
+      <div className="prize-pool-amount">₹7500</div>
       <div className="prize-pool-label">Total Prize Pool</div>
     </div>
     
@@ -213,7 +244,7 @@ const Page = () => {
 
       <div className="prize-card">
         <div className="prize-icon">🏆</div>
-        <div className="prize-amount">₹1750</div>
+        <div className="prize-amount">₹1500</div>
         <div className="prize-label">Runner Ups Software Track</div>
         <div className="prize-extras">
           + Development Resources
@@ -222,7 +253,7 @@ const Page = () => {
 
       <div className="prize-card">
         <div className="prize-icon">🏆</div>
-        <div className="prize-amount">₹1750</div>
+        <div className="prize-amount">₹1500</div>
         <div className="prize-label">Runner Ups IOT track</div>
         <div className="prize-extras">
            +Special Recognition
@@ -231,7 +262,7 @@ const Page = () => {
 
       <div className="prize-card">
         <div className="prize-icon">⭐</div>
-        <div className="prize-amount">₹1750</div>
+        <div className="prize-amount">₹1500</div>
         <div className="prize-label">Best All Girls Team</div>
         <div className="prize-extras">
           + Special Recognition
