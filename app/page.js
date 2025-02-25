@@ -78,15 +78,23 @@ const Page = () => {
     <h3 className="reva-title">REVA SOLAR RACING</h3>
     <h2>PRESENTS</h2>
     <h1>DeepDrive Auto Challenge</h1>
-    <p>The First<span className="highlight-text"> Autonomous</span> Vehicle Hackathon In VIT Chennai.</p>
-    <a 
-  href="https://forms.gle/G5vdcSsySNs1nDbT8" 
-  target="_blank" 
-  rel="noopener noreferrer" 
-  className="cta-button"
->
-  REGISTER NOW
-</a>
+    <p>The First<span className="highligh-text"> Autonomous</span> Vehicle Hackathon In VIT Chennai.</p>
+    
+
+<div className="button-group">
+  <a href="#" className="cta-button">
+    Register Now
+  </a><br></br>
+  <a 
+    href="https://www.vitchennaievents.com/conf1/index.php?eventid=2623" 
+    className="cta-button secondary"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    VIT Portal Registration
+  </a>
+</div>
+
             
             <div className="countdown">
               <div className="countdown-item">
