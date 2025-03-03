@@ -82,16 +82,16 @@ const Page = () => {
     
 
 <div className="button-group">
-  <a href="#" className="cta-button">
+  <a href="https://www.vitchennaievents.com/conf1/index.php?eventid=2623" className="cta-button">
     Register Now
   </a><br></br>
   <a 
-    href="https://www.vitchennaievents.com/conf1/index.php?eventid=2623" 
+    href="https://chat.whatsapp.com/DLBTmfkpQLK882txBRgBCI" 
     className="cta-button secondary"
     target="_blank"
     rel="noopener noreferrer"
   >
-    VIT Portal Registration
+    Join Whatsapp
   </a>
 </div>
 
