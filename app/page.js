@@ -348,7 +348,7 @@ const Page = () => {
       </div>
       <div className="rule-card">
         <div className="rule-number">03</div>
-        <p className="rule-text">There must be atleast three competing teams for each track for track prize to be awarded.</p>
+        <p className="rule-text">There must be atleast three competing teams in each track for track prize to be awarded.</p>
       </div>
     </div>
   </div>
