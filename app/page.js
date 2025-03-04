@@ -334,8 +334,25 @@ const Page = () => {
             </div>
           </div>
         </section>*/}
-
-
+        <section className="rules-section">
+  <div className="container">
+    <h2 className="section-title">Event Rules</h2>
+    <div className="rules-grid">
+      <div className="rule-card">
+        <div className="rule-number">01</div>
+        <p className="rule-text">There must be atleast 15 teams for the hackathon to commence.</p>
+      </div>
+      <div className="rule-card">
+        <div className="rule-number">02</div>
+        <p className="rule-text">The workshop will be open for any number of registered teams.</p>
+      </div>
+      <div className="rule-card">
+        <div className="rule-number">03</div>
+        <p className="rule-text">There must be atleast three competing teams for each track for track prize to be awarded.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
         <footer>
           <div className="container">

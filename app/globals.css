@@ -2531,3 +2531,61 @@ nav {
   transform: translateY(-3px);
   box-shadow: 0 0 25px rgba(215, 66, 244, 0.6);
 }
+.rules-section {
+  padding: 80px 0;
+  background: linear-gradient(170deg, var(--bg-dark) 0%, var(--bg-card) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.rules-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.rule-card {
+  background: rgba(30, 30, 30, 0.9);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 30px;
+  border: 1px solid rgba(0, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.rule-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--neon-cyan);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3),
+              0 0 20px rgba(0, 255, 255, 0.2);
+}
+
+.rule-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, var(--neon-cyan), var(--neon-purple));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  line-height: 1;
+}
+
+.rule-text {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .rules-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .rule-card {
+    padding: 20px;
+  }
+}
